@@ -1,20 +1,20 @@
+"use client";
 import Image from "next/image";
-import React, { FC, useState } from 'react';
-import { useRouter } from 'next/router'; // Import useRouter for navigation
-
+import React, { FC, useState } from "react";
+import { useRouter } from "next/router"; // Import useRouter for navigation
 
 export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
   placeholder = "Enter your VIN",
   maxW = "600px",
 }) => {
-    const [vin, setVin] = useState(''); // State to store the VIN value
+  const [vin, setVin] = useState(""); // State to store the VIN value
   const router = useRouter(); // useRouter hook for navigation
 
   const handleDecodeClick = () => {
     if (vin) {
       router.push(`/vin/${vin}`); // Navigate to the /vin/{vin} page
     } else {
-      alert('Please enter a VIN to decode.');
+      alert("Please enter a VIN to decode.");
     }
   };
   return (
