@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Data from "../../../../data.json";
+import Data from "../../../data.json";
 import { CarMakeDetail } from "@/types";
 import { CarModelsList } from "@/components/car-models-list";
 import { SearchBlock } from "@/components/search-block";

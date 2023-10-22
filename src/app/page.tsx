@@ -81,7 +81,7 @@ export default function Home() {
               {/* Link to Make Page */}
               <div className="mt-4">
                 <Link
-                  href={`/make/${item.slug}`}
+                  href={`/${item.slug}`}
                   className="text-blue-500 no-underline hover:underline"
                 >
                   {item.make} VIN decoder
