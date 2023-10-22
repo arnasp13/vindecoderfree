@@ -101,7 +101,7 @@ const FAQ_items: FAQItem[] = [
       <>
         <p>
           Yes, you can use our VIN decoder for commercial purposes, especially
-          if you're in the automotive industry. For bulk decoding or API access
+          if you&apos;re in the automotive industry. For bulk decoding or API access
           for commercial use, please refer to our pricing and licensing options.
         </p>
       </>
@@ -137,7 +137,7 @@ const FAQ_items: FAQItem[] = [
       <>
         <p>
           Absolutely! Our VIN decoder supports Chevy vehicles, among many other
-          brands. Simply input the Chevy VIN, and you'll receive detailed
+          brands. Simply input the Chevy VIN, and you&apos;ll receive detailed
           information specific to that vehicle.
         </p>
       </>
@@ -162,7 +162,7 @@ const FAQ_items: FAQItem[] = [
         <p>
           Our VIN decoder is designed to support a vast range of car brands,
           including major manufacturers like Chevy, Ford, Toyota, and many more.
-          However, if you encounter a brand or specific vehicle model that isn't
+          However, if you encounter a brand or specific vehicle model that isn&apos;t
           supported, please contact our support team for assistance.
         </p>
       </>
