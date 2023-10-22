@@ -16,7 +16,7 @@ export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({ place
         className="absolute top-1/2 transform left-6 -translate-y-1/2  h-6 w-6"
       />
       <button className="absolute top-1/2 transform right-6 -translate-y-1/2 font-medium bg-primary-1 p-3 text-white rounded-[100px] focus:outline-none">
-        Get data
+        Decode
       </button>
     </div>
   );

@@ -28,6 +28,7 @@ export default function RootLayout({
                   <Link href="/">
                     <Image src="/logo.png" width={60} height={60} alt="Logo" />
                   </Link>
+                     
                   <Link
                     href="/"
                     className="no-underline bg-primary-1 px-5 py-4 rounded-[50px] text-white font-semibold"

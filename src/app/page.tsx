@@ -20,7 +20,7 @@ export default function Home() {
           Enter your Vehicle Identification Number to get details
         </p>
 
-<SearchBlock />
+        <SearchBlock />
 
         <div className="py-12 flex justify-between max-w-[800px] m-auto gap-2">
           {[
