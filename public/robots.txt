@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.vindecoderfree.com/
+
+# Sitemaps
+Sitemap: https://www.vindecoderfree.com/sitemap.xml
