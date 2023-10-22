@@ -28,7 +28,7 @@ const FAQ_items: FAQItem[] = [
         <p>
           Yes, our VIN decoder is designed to decode the VIN of a wide range of
           vehicles from various manufacturers and production years. However,
-          it's essential to ensure the VIN is accurate and valid for successful
+          it&apos;s essential to ensure the VIN is accurate and valid for successful
           decoding.
         </p>
       </>
