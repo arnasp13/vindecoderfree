@@ -12,6 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: URL || "https://www.vindecoderfree.com/",
       priority: 1,
     },
-    ...Data.map(({ slug }) => ({ url: `${URL}/${slug}`, priority: 1 })),
+    ...Data.map(({ slug }) => ({
+      url: `${URL}/${slug}-vin-decoder`,
+      priority: 1,
+    })),
   ];
 }
