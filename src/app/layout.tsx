@@ -14,18 +14,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-        />
-        <Script id="google-analytics">
-          {`
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+      />
+      <Script id="google-analytics">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
           gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
         `}
-        </Script>
+      </Script>
       <body className={inter.className}>
         <Providers>
           <div>
