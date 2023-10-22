@@ -10,14 +10,14 @@ type Props = {
   params: { slug: string };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
   const { slug } = params;
 
+  const extractedMake = slug.split("-")[0].replace("/", "");
+
   // fetch data
-  const car = Data.filter((item) => item.slug === slug)[0];
+  const car = Data.filter((item) => item.slug === extractedMake)[0];
 
   return {
     title: `${car?.make} VIN decoder`,
@@ -29,8 +29,10 @@ export async function generateMetadata(
 }
 
 export default function Home({ params }: { params: { slug: string } }) {
+  const extractedMake = params?.slug.split("-")[0].replace("/", "");
+
   const carData = Data.filter(
-    (item) => item.slug?.toLowerCase() === params?.slug?.toLowerCase()
+    (item) => item.slug?.toLowerCase() === extractedMake?.toLowerCase()
   )[0];
 
   return (
@@ -56,7 +58,7 @@ export default function Home({ params }: { params: { slug: string } }) {
 
         <div className="my-8">
           <h4 className="font-semibold mb-4">Try example VINs:</h4>
-          <div className="mb-12 flex justify-between">
+          <div className="mb-12 flex flex-col md:flex-row gap-1 justify-between">
             {carData?.example_vins?.map((item) => (
               <Link
                 key={item.vin}
@@ -72,7 +74,7 @@ export default function Home({ params }: { params: { slug: string } }) {
         <div>
           <h4 className="font-semibold">{carData?.make} models:</h4>
 
-          <CarModelsList slug={params?.slug} />
+          <CarModelsList slug={extractedMake} />
         </div>
       </div>
     </div>
@@ -81,7 +83,7 @@ export default function Home({ params }: { params: { slug: string } }) {
 
 export async function generateStaticParams() {
   const iterable = Data?.map((car: CarMakeDetail) => ({
-    slug: car?.slug,
+    slug: `${car?.slug}-vin-decoder`,
   }));
 
   return iterable;

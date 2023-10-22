@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { FC } from "react";
 
-export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({ placeholder ="Enter your VIN", maxW = '600px' }) => {
+export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
+  placeholder = "Enter your VIN",
+  maxW = "600px",
+}) => {
   return (
-    <div className={`relative w-full sm:max-w-[${maxW}] px-4 mt-4 md:pt-0 m-auto`}>
+    <div
+      className={`relative w-full sm:max-w-[${maxW}] px-2 md:px-4 mt-4 md:pt-0 m-auto`}
+    >
       <input
-        className="w-full border h-16 rounded-[100px] pl-10 px-4"
+        className="w-full border h-16 rounded-[100px] pl-10 px-2 md:px-4"
         placeholder={placeholder}
       />
       <Image

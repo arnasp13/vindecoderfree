@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       {/* First Block */}
-      <section className="bg-white py-20 px-4">
+      <section className="bg-white py-20 px-4 max-w-[1000px] m-auto">
         <h1 className="text-5xl font-bold text-center">VIN Decoder</h1>
         <p className="text-xl text-center text-gray-600 mt-4 mb-8">
           Enter your Vehicle Identification Number to get details
@@ -30,7 +30,7 @@ export default function Home() {
 
         <SearchBlock />
 
-        <div className="py-12 flex justify-between max-w-[800px] m-auto gap-2">
+        <div className="py-12 flex flex-col sm:flex-row justify-between max-w-[800px] m-auto gap-2">
           {[
             "Latest NHTSA-endorsed data",
             "Up-to-date information",
@@ -84,7 +84,7 @@ export default function Home() {
                       href={`/vin/${vin.vin}`}
                       className="no-underline text-black"
                     >
-                      <li className="text-xs">
+                      <li className="text-sm">
                         {vin.model} ({vin.year}):{" "}
                         <span className="text-primary-1 hover:underline">
                           {vin.vin}
@@ -98,7 +98,7 @@ export default function Home() {
               {/* Link to Make Page */}
               <div className="mt-4">
                 <Link
-                  href={`/${item.slug}`}
+                  href={`/${item.slug}-vin-decoder`}
                   className="text-blue-500 no-underline hover:underline"
                 >
                   {item.make} VIN decoder

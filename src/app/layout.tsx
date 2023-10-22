@@ -18,7 +18,7 @@ export default function RootLayout({
           <div>
             <div>
               <div className="border-b">
-                <div className="max-w-[1200px] hidden md:flex md:justify-between items-center py-3 m-auto px-3">
+                <div className="max-w-[1200px] flex justify-between items-center py-3 m-auto px-3">
                   <Link href="/">
                     <Image src="/logo.png" width={60} height={60} alt="Logo" />
                   </Link>

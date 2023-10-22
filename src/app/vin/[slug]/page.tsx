@@ -116,9 +116,9 @@ export default function Home({ params }: { params: { slug: string } }) {
         <meta name="author" content="My Name" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+      <div className="max-w-4xl mx-auto mt-10 p-2 md:p-6 bg-white rounded-lg shadow-md">
         <div className="flex justify-between mb-4">
-          <div className="flex items-center justify-start gap-4 mb-4">
+          <div className="flex items-center justify-start gap-2 md:gap-4 mb-4">
             <Image src={`/icons/check.svg`} width={40} height={40} alt="" />
             <h1 className="text-2xl font-bold">{getTitle()}</h1>
           </div>
