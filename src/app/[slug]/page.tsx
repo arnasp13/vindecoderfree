@@ -4,6 +4,29 @@ import { CarMakeDetail } from "@/types";
 import { CarModelsList } from "@/components/car-models-list";
 import { SearchBlock } from "@/components/search-block";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata(
+  { params }: Props,
+): Promise<Metadata> {
+  // read route params
+  const { slug } = params;
+
+  // fetch data
+  const car = Data.filter((item) => item.slug === slug)[0];
+
+  return {
+    title: `${car?.make} VIN decoder`,
+    description: car?.about,
+    openGraph: {
+      images: [car?.logo],
+    },
+  };
+}
 
 export default function Home({ params }: { params: { slug: string } }) {
   const carData = Data.filter(
@@ -35,12 +58,13 @@ export default function Home({ params }: { params: { slug: string } }) {
           <h4 className="font-semibold mb-4">Try example VINs:</h4>
           <div className="mb-12 flex justify-between">
             {carData?.example_vins?.map((item) => (
-              <div
-                key={item?.model}
-                className="bg-neutral-400 text-white p-4 gap-3"
+              <Link
+                key={item.vin}
+                href={`/vin/${item.vin}`}
+                className="no-underline hover:underline text-primary-1 border p-4 bg-neutral-200"
               >
                 {item?.vin}
-              </div>
+              </Link>
             ))}
           </div>
         </div>

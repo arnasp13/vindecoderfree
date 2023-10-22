@@ -4,6 +4,14 @@ import Image from "next/image";
 import CarData from "../../data.json";
 import Link from "next/link";
 import { SearchBlock } from "@/components/search-block";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "VIN Decoder: Instantly Decode Vehicle Identification Numbers",
+  openGraph: { images: ['https://i.imgur.com/xSMr2ff.png'] },
+  description: "Unlock detailed information about any vehicle with our VIN Decoder. Enter a Vehicle Identification Number (VIN) to get a comprehensive report on its make, model, year, and more. Discover the history and specs of your vehicle in seconds."
+}
+
 
 export default function Home() {
   return (
@@ -71,9 +79,18 @@ export default function Home() {
                 <strong className="block mb-1">Example VINs:</strong>
                 <ul className="list-disc pl-5">
                   {item.example_vins.map((vin, index) => (
-                    <li key={index} className="text-xs">
-                      {vin.model} ({vin.year}): {vin.vin}
-                    </li>
+                    <Link
+                      key={index}
+                      href={`/vin/${vin.vin}`}
+                      className="no-underline text-black"
+                    >
+                      <li className="text-xs">
+                        {vin.model} ({vin.year}):{" "}
+                        <span className="text-primary-1 hover:underline">
+                          {vin.vin}
+                        </span>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>

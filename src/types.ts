@@ -15,7 +15,7 @@ export interface CarMakeDetail {
   about: string;
 }
 
-interface VinResponse {
+export interface VinResponse {
   Count: number;
   Message: string;
   SearchCriteria: string;

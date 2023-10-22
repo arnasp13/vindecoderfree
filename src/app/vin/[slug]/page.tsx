@@ -10,6 +10,7 @@ import {
   StyleSheet,
   PDFDownloadLink,
 } from "@react-pdf/renderer";
+import Head from "next/head";
 
 const importantVariables = [
   "Make",
@@ -107,61 +108,73 @@ export default function Home({ params }: { params: { slug: string } }) {
   );
 
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <div className="flex justify-between mb-4">
-        <div className="flex items-center justify-start gap-4 mb-4">
-          <Image src={`/icons/check.svg`} width={40} height={40} alt="" />
-          <h1 className="text-2xl font-bold">{getTitle()}</h1>
-        </div>
+    <>
+      <Head>
+        <title>{getTitle()}</title>
+        <meta name="description" content="This is a description of my page." />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="My Name" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+        <div className="flex justify-between mb-4">
+          <div className="flex items-center justify-start gap-4 mb-4">
+            <Image src={`/icons/check.svg`} width={40} height={40} alt="" />
+            <h1 className="text-2xl font-bold">{getTitle()}</h1>
+          </div>
 
-        <div>
-          <PDFDownloadLink document={<VINReport />} fileName={`${params?.slug}-report.pdf`}>
-            {({ loading }) =>
-              loading ? (
-                <button className="bg-neutral-500 font-semibold p-4 border rounded-[50px] text-white">
-                  Loading...
-                </button>
-              ) : (
-                <button className="bg-neutral-500 font-semibold p-4 border rounded-[50px] text-white">
-                  Download PDF report
-                </button>
-              )
-            }
-          </PDFDownloadLink>
+          <div>
+            <PDFDownloadLink
+              document={<VINReport />}
+              fileName={`${params?.slug}-report.pdf`}
+            >
+              {({ loading }) =>
+                loading ? (
+                  <button className="bg-neutral-500 font-semibold p-4 border rounded-[50px] text-white">
+                    Loading...
+                  </button>
+                ) : (
+                  <button className="bg-neutral-500 font-semibold p-4 border rounded-[50px] text-white">
+                    Download PDF report
+                  </button>
+                )
+              }
+            </PDFDownloadLink>
+          </div>
+        </div>
+        <table className="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+          <thead>
+            <tr className="bg-blue-500 text-white">
+              <th className="p-4 uppercase font-semibold text-sm text-left border">
+                Attribute
+              </th>
+              <th className="p-4 uppercase font-semibold text-sm text-left">
+                Value
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {importantResults.map((result, index) => (
+              <tr key={index} className="border-b border-gray-200">
+                <td className="p-4 font-medium">{result.Variable}</td>
+                <td className="p-4">{result.Value}</td>
+              </tr>
+            ))}
+            {otherResults.map((result, index) => (
+              <tr
+                key={index + importantResults.length}
+                className="border-b border-gray-200"
+              >
+                <td className="p-4 font-medium">{result.Variable}</td>
+                <td className="p-4">{result.Value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="my-8">
+          <SearchBlock placeholder="Decode another VIN" />
         </div>
       </div>
-      <table className="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
-        <thead>
-          <tr className="bg-blue-500 text-white">
-            <th className="p-4 uppercase font-semibold text-sm text-left border">
-              Attribute
-            </th>
-            <th className="p-4 uppercase font-semibold text-sm text-left">
-              Value
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {importantResults.map((result, index) => (
-            <tr key={index} className="border-b border-gray-200">
-              <td className="p-4 font-medium">{result.Variable}</td>
-              <td className="p-4">{result.Value}</td>
-            </tr>
-          ))}
-          {otherResults.map((result, index) => (
-            <tr
-              key={index + importantResults.length}
-              className="border-b border-gray-200"
-            >
-              <td className="p-4 font-medium">{result.Variable}</td>
-              <td className="p-4">{result.Value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="my-8">
-        <SearchBlock placeholder="Decode another VIN" />
-      </div>
-    </div>
+    </>
   );
 }

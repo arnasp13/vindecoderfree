@@ -1,5 +1,6 @@
 import { useQuery } from "react-query";
 import axios from "axios";
+import { VinResult } from "@/types";
 
 const fetchCarModels = async (slug: string) => {
   const { data } = await axios.get(
@@ -16,7 +17,7 @@ const fetchVinData = async (vin: string) => {
   const { data } = await axios.get(
     `https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vin}?format=json`
   );
-  return data.Results;
+  return data.Results as VinResult[];
 };
 
 export const useVinDecoder = (vin: string) => {
