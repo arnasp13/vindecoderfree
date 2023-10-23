@@ -8,10 +8,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "VIN Decoder: Instantly Decode Vehicle Identification Numbers",
-  openGraph: { images: ['https://i.imgur.com/xSMr2ff.png'] },
-  description: "Unlock detailed information about any vehicle with our VIN Decoder. Enter a Vehicle Identification Number (VIN) to get a comprehensive report on its make, model, year, and more. Discover the history and specs of your vehicle in seconds."
-}
-
+  openGraph: { images: ["https://i.imgur.com/xSMr2ff.png"] },
+  description:
+    "Unlock detailed information about any vehicle with our VIN Decoder. Enter a Vehicle Identification Number (VIN) to get a comprehensive report on its make, model, year, and more. Discover the history and specs of your vehicle in seconds.",
+};
 
 export default function Home() {
   return (
@@ -107,6 +107,26 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="py-12 m-auto flex flex-col items-center px-4">
+        <h2 className="font-semibold text-3xl">
+          Install Google Sheets Add-On for VIN decoding
+        </h2>
+
+        <Image
+          src="/google-sheet.gif"
+          className="mt-4 mb-8"
+          width={800}
+          height={800}
+          alt="Video representation"
+        />
+        <Link
+          href="mailto:arnaspuidokas6@gmail.com?subject=Request for Google Sheets Add-on&body=Hi! I would like to get an add-on for google sheets."
+          className="no-underline bg-primary-1 px-5 py-4 rounded-[50px] text-white font-semibold"
+        >
+          Install Google Sheet Add-On
+        </Link>
       </div>
       <FAQ />
     </div>

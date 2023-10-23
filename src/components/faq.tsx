@@ -28,8 +28,8 @@ const FAQ_items: FAQItem[] = [
         <p>
           Yes, our VIN decoder is designed to decode the VIN of a wide range of
           vehicles from various manufacturers and production years. However,
-          it&apos;s essential to ensure the VIN is accurate and valid for successful
-          decoding.
+          it&apos;s essential to ensure the VIN is accurate and valid for
+          successful decoding.
         </p>
       </>
     ),
@@ -101,8 +101,9 @@ const FAQ_items: FAQItem[] = [
       <>
         <p>
           Yes, you can use our VIN decoder for commercial purposes, especially
-          if you&apos;re in the automotive industry. For bulk decoding or API access
-          for commercial use, please refer to our pricing and licensing options.
+          if you&apos;re in the automotive industry. For bulk decoding or API
+          access for commercial use, please refer to our pricing and licensing
+          options.
         </p>
       </>
     ),
@@ -162,8 +163,8 @@ const FAQ_items: FAQItem[] = [
         <p>
           Our VIN decoder is designed to support a vast range of car brands,
           including major manufacturers like Chevy, Ford, Toyota, and many more.
-          However, if you encounter a brand or specific vehicle model that isn&apos;t
-          supported, please contact our support team for assistance.
+          However, if you encounter a brand or specific vehicle model that
+          isn&apos;t supported, please contact our support team for assistance.
         </p>
       </>
     ),
@@ -181,7 +182,7 @@ const FAQInnerItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   return (
     <div
       onClick={() => setIsOpen(!isOpen)}
-      className={`border  text-left p-8 rounded-2xl ${
+      className={`border bg-white text-left p-8 rounded-2xl ${
         isOpen ? "border-primary-1" : "hover:border-primary-1"
       } cursor-pointer`}
     >
@@ -215,16 +216,22 @@ const FAQInnerItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 
 export const FAQ = () => {
   return (
-    <div className="max-w-[1200px] mx-auto my-16 text-center px-2">
-      <h3 className="text-4xl font-semibold">Frequently Asked Questions</h3>
-      <p className="mt-2 text-neutral-600 text-lg">
-        Your answers, simplified for convenience.
-      </p>
+    <div className="bg-secondary-2 py-8">
+      <div className="max-w-[1200px] mx-auto my-16 text-center px-2 ">
+        <h3 className="text-4xl font-semibold">Frequently Asked Questions</h3>
+        <p className="mt-2 text-neutral-600 text-lg">
+          Your answers, simplified for convenience.
+        </p>
 
-      <div className="mt-8 flex flex-col gap-4">
-        {FAQ_items.map((item, i) => (
-          <FAQInnerItem key={i} question={item.question} answer={item.answer} />
-        ))}
+        <div className="mt-8 flex flex-col gap-4 ">
+          {FAQ_items.map((item, i) => (
+            <FAQInnerItem
+              key={i}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
