@@ -36,12 +36,13 @@ export default function RootLayout({
                     <Image src="/logo.png" width={60} height={60} alt="Logo" />
                   </Link>
 
-                  {/* <Link
-                    href="mailto:arnaspuidokas6@gmail.com?subject=Request for Google Sheets Add-on&body=Hi! I would like to get an add-on for google sheets."
+                  <Link
+                    href="https://tally.so/r/w2AVZV"
+                    target="_blank"
                     className="no-underline bg-primary-1 px-5 py-4 rounded-[50px] text-white font-semibold"
                   >
-                    Install Google Sheet Add-On
-                  </Link> */}
+                    Get Google Sheet Add-On
+                  </Link>
                 </div>
               </div>
             </div>
