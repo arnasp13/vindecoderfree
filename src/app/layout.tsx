@@ -37,7 +37,7 @@ export default function RootLayout({
                   </Link>
 
                   <Link
-                    href="https://tally.so/r/w2AVZV"
+                    href="/google-sheets"
                     target="_blank"
                     className="no-underline bg-primary-1 px-5 py-4 rounded-[50px] text-white font-semibold"
                   >
