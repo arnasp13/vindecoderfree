@@ -3,7 +3,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ChangeEvent, ReactNode, useState } from "react";
 
 export const VinDecoder: React.FC = () => {
-    const searchParams = useSearchParams();
+  const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -42,7 +42,7 @@ export const VinDecoder: React.FC = () => {
     setDecodedInfo(info);
   };
 
-    const onSelectVin = (event: ChangeEvent<HTMLInputElement>) => {
+  const onSelectVin = (event: ChangeEvent<HTMLInputElement>) => {
     const current = new URLSearchParams(searchParams);
 
     const value = event.target.value.trim();
