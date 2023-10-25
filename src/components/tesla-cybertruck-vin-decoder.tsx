@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 export const VinDecoder: React.FC = () => {
   const [vin, setVin] = useState("7G2CTEBENR5001234");
@@ -59,8 +59,7 @@ export const VinDecoder: React.FC = () => {
             {Object.entries(decodedInfo).map(([key, value]) => (
               <li key={key}>
                 <strong>{key.charAt(0).toUpperCase() + key.slice(1)}:</strong>{" "}
-                {/* @ts-ignore */}
-                {value}
+                {value as ReactNode}
               </li>
             ))}
           </ul>
