@@ -18,10 +18,14 @@ export default function Home() {
             vehicle. Using this guide, you can decipher the meaning behind each
             segment of the VIN and gain a deeper understanding of your
             Cybertruck&apos;s specifications.
-
             <br />
             <br />
-            <Link href="https://vpic.nhtsa.dot.gov/mid/home/displayfile/fbec7f77-5e2b-4d06-b46c-267e7327c2ff" target="_blank">Read more on NHTSA guide</Link>
+            <Link
+              href="https://vpic.nhtsa.dot.gov/mid/home/displayfile/fbec7f77-5e2b-4d06-b46c-267e7327c2ff"
+              target="_blank"
+            >
+              Read more on NHTSA guide
+            </Link>
           </p>
         </section>
 
@@ -78,7 +82,13 @@ export default function Home() {
             </li>
           </ul>
 
-          <Image src="/tesla-vin-decoder.webp" width={500} height={500} alt="" className="my-3 rounded border" />
+          <Image
+            src="/tesla-vin-decoder.webp"
+            width={500}
+            height={500}
+            alt=""
+            className="my-3 rounded border"
+          />
         </section>
 
         {/* Detailed Breakdown */}
