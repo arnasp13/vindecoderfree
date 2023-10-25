@@ -1,6 +1,8 @@
 "use client";
 import React, { FC, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { Modal } from "./how-to-find-vin-modal";
 
 export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
   placeholder = "Enter your VIN",
@@ -9,6 +11,7 @@ export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
   const [vin, setVin] = useState("");
   const [errorMessage, setErrorMessage] = useState(""); // State to store the error message
   const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleDecodeClick = () => {
     // Validation for VIN length
@@ -51,11 +54,23 @@ export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
         >
           Decode
         </button>
+
         {/* Conditionally render the error message */}
+      </div>
+      <div
+        className="pl-10 flex gap-1 items-center mt-2 cursor-pointer"
+        onClick={() => {
+          setIsModalOpen(true);
+        }}
+      >
+        <Image src="/icons/info.svg" width={16} height={16} alt="Info" />
+        <span className=" font-medium text-xs">How to find my VIN?</span>
       </div>
       {errorMessage && (
         <p className="text-red-500 mt-2 ml-5 text-sm">{errorMessage}</p>
       )}
+
+      <Modal setIsOpen={setIsModalOpen} isOpen={isModalOpen} />
     </>
   );
 };

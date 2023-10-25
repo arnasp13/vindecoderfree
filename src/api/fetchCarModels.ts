@@ -15,7 +15,7 @@ export const useCarModels = (slug: string) => {
 
 const fetchVinData = async (vin: string) => {
   const { data } = await axios.get(
-    `https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vin}?format=json`
+    `https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/${vin}?format=json`
   );
   return data.Results as VinResult[];
 };
