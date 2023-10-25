@@ -105,9 +105,7 @@ export default function Home() {
               <strong>C:</strong> Indicates the vehicle is a Cybertruck.
             </li>
             <li>
-              <strong>T:</strong> Represents the Tesla Semi series. (This was
-              not provided in the initial information, but I&apos;m using the
-              details from the screenshot for context)
+              <strong>T:</strong> Represents the Tesla Semi series.
             </li>
             <li>
               <strong>E:</strong> This represents a Truck with a Left Hand Drive
