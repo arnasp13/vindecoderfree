@@ -1,6 +1,12 @@
-import { ReactNode, useState } from "react";
+"use client";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { ChangeEvent, ReactNode, useState } from "react";
 
 export const VinDecoder: React.FC = () => {
+    const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [vin, setVin] = useState("7G2CTEBENR5001234");
   const [decodedInfo, setDecodedInfo] = useState<any>({});
 
@@ -34,6 +40,23 @@ export const VinDecoder: React.FC = () => {
     };
 
     setDecodedInfo(info);
+  };
+
+    const onSelectVin = (event: ChangeEvent<HTMLInputElement>) => {
+    const current = new URLSearchParams(searchParams);
+
+    const value = event.target.value.trim();
+
+    if (!value) {
+      current.delete("vin");
+    } else {
+      current.set("vin", event.target.value);
+    }
+
+    const search = current.toString();
+    const query = search ? `?${search}` : "";
+
+    router.push(`${pathname}${query}`);
   };
 
   return (
