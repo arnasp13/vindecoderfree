@@ -64,6 +64,7 @@ export default function Home({ params }: { params: { slug: string } }) {
               <h2 className="font-semibold">
                 {item.question_template.replace("{make}", carData.make)}
               </h2>
+              {/* @ts-ignore */}
               <p className="mt-1">{carData.faq[item.question_key]}</p>
             </div>
           ))}
