@@ -5,6 +5,8 @@ import { VinDataTable } from "@/components/vin-data-table";
 import axios from "axios";
 import { VinResult } from "@/types";
 import { Metadata } from "next";
+import Data from "../../../../public/data.json";
+import Link from "next/link";
 
 const importantVariables = [
   "Make",
@@ -40,9 +42,9 @@ const importantVariables = [
 ];
 
 const getTitle = ({ data }: { data: VinResult[] }) => {
-  const year = data.find((item) => item.Variable === "Model Year")?.Value || '';
-  const make = data.find((item) => item.Variable === "Make")?.Value || '';
-  const model = data.find((item) => item.Variable === "Model")?.Value || '';
+  const year = data.find((item) => item.Variable === "Model Year")?.Value || "";
+  const make = data.find((item) => item.Variable === "Make")?.Value || "";
+  const model = data.find((item) => item.Variable === "Model")?.Value || "";
 
   return `${year} ${make} ${model} VIN details`;
 };
@@ -60,7 +62,7 @@ export const generateMetadata = async ({
 
   return {
     openGraph: {
-      images: ['/vin-code-on-car.jpg']
+      images: ["/vin-code-on-car.jpg"],
     },
     title: `Decoded VIN - Comprehensive VIN Number Analysis of ${params?.slug}`,
     description: `Unlock detailed information about your ${carTitle}! VIN code ${params?.slug} and its comprehensive breakdown of its history, specifications, and unique manufacturer details.`,
@@ -91,10 +93,41 @@ export default async function Home({ params }: { params: { slug: string } }) {
   );
 
   const title = getTitle({ data });
+  const carMake = data.find((item) => item.Variable === "Make")?.Value || "";
+
+  const filteredMakes = Data.filter(
+    (item) => item.make.toUpperCase() === carMake.toUpperCase()
+  );
+  const carMakeData = filteredMakes?.length > 0 ? filteredMakes[0] : null;
+
+  console.log({ carMake, carMakeData });
 
   return (
     <>
       <div className="max-w-4xl mx-auto mt-10 p-2 md:p-6 bg-white rounded-lg shadow-md">
+        <div className="mb-4 flex gap-2 items-center text-gray-600">
+          <Link
+            href="/"
+            className="hover:text-blue-500 transition duration-200 no-underline hover:underline text-xs"
+          >
+            Home
+          </Link>
+          <span>{`>`}</span>
+          {carMakeData && (
+            <>
+              <Link
+                href={`/${carMakeData.slug.toLowerCase()}-vin-decoder`}
+                className="hover:text-blue-500 transition duration-200 hover:underline no-underline text-xs"
+              >
+                {carMakeData.make}
+              </Link>
+              <span>{`>`}</span>
+            </>
+          )}
+          {params?.slug && (
+            <p className="text-gray-800 text-xs">{params?.slug} VIN data</p>
+          )}
+        </div>
         <div className="flex justify-between mb-4">
           <div className="flex items-center justify-start gap-2 md:gap-4 mb-4">
             <Image src={`/icons/check.svg`} width={40} height={40} alt="" />
