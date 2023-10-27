@@ -1,16 +1,10 @@
-"use client";
-import { useVinDecoder } from "@/api/fetchCarModels";
 import { SearchBlock } from "@/components/search-block";
 import Image from "next/image";
-import {
-  Page,
-  Text,
-  View,
-  Document,
-  StyleSheet,
-  PDFDownloadLink,
-} from "@react-pdf/renderer";
-import Head from "next/head";
+import { DownloadLink } from "@/components/vin-report";
+import { VinDataTable } from "@/components/vin-data-table";
+import axios from "axios";
+import { VinResult } from "@/types";
+import { Metadata } from "next";
 
 const importantVariables = [
   "Make",
@@ -45,35 +39,44 @@ const importantVariables = [
   "Plant Company Name",
 ];
 
-const styles = StyleSheet.create({
-  page: {
-    padding: 30,
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
-  },
-});
+const getTitle = ({ data }: { data: VinResult[] }) => {
+  const year = data.find((item) => item.Variable === "Model Year")?.Value;
+  const make = data.find((item) => item.Variable === "Make")?.Value;
+  const model = data.find((item) => item.Variable === "Model")?.Value;
 
-export default function Home({ params }: { params: { slug: string } }) {
-  const { data, isLoading } = useVinDecoder(params?.slug);
+  return `${year} ${make} ${model} VIN details`;
+};
 
-  if (isLoading) {
-    return <>Loading ...</>;
-  }
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> => {
+  const response = await axios.get(
+    `https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/${params?.slug}?format=json`
+  );
 
-  if (!data && !isLoading) {
+  const carTitle = getTitle({ data: response?.data?.Results });
+
+  return {
+    openGraph: {
+      images: ['/vin-code-on-car.jpg']
+    },
+    title: `Decoded VIN - Comprehensive VIN Number Analysis of ${params?.slug}`,
+    description: `Unlock detailed information about your ${carTitle}! VIN code ${params?.slug} and its comprehensive breakdown of its history, specifications, and unique manufacturer details.`,
+  };
+};
+
+export default async function Home({ params }: { params: { slug: string } }) {
+  const response = await axios.get(
+    `https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/${params?.slug}?format=json`
+  );
+
+  const data = response?.data?.Results as VinResult[];
+
+  if (!data) {
     return <div>Sorry we have not been able to get data. Try another VIN</div>;
   }
-
-  const getTitle = () => {
-    const year = data.find((item) => item.Variable === "Model Year")?.Value;
-    const make = data.find((item) => item.Variable === "Make")?.Value;
-    const model = data.find((item) => item.Variable === "Model")?.Value;
-
-    return `${year} ${make} ${model} VIN details`;
-  };
 
   const filteredResults = data.filter(
     (result) => !result.Variable.includes("Error") && result.Value
@@ -87,90 +90,30 @@ export default function Home({ params }: { params: { slug: string } }) {
     (result) => !importantVariables.includes(result.Variable)
   );
 
-  const VINReport = () => (
-    <Document>
-      <Page size="A4" style={styles.page}>
-        <View style={styles.section}>
-          <Text>{getTitle()}</Text>
-          {importantResults.map((result, index) => (
-            <Text key={index}>
-              {result.Variable}: {result.Value}
-            </Text>
-          ))}
-          {otherResults.map((result, index) => (
-            <Text key={index}>
-              {result.Variable}: {result.Value}
-            </Text>
-          ))}
-        </View>
-      </Page>
-    </Document>
-  );
+  const title = getTitle({ data });
 
   return (
     <>
-      <Head>
-        <title>{getTitle()}</title>
-        <meta name="description" content="This is a description of my page." />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="My Name" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
       <div className="max-w-4xl mx-auto mt-10 p-2 md:p-6 bg-white rounded-lg shadow-md">
         <div className="flex justify-between mb-4">
           <div className="flex items-center justify-start gap-2 md:gap-4 mb-4">
             <Image src={`/icons/check.svg`} width={40} height={40} alt="" />
-            <h1 className="text-2xl font-bold">{getTitle()}</h1>
+            <h1 className="text-2xl font-bold">{title}</h1>
           </div>
 
           <div>
-            <PDFDownloadLink
-              document={<VINReport />}
-              fileName={`${params?.slug}-report.pdf`}
-            >
-              {({ loading }) =>
-                loading ? (
-                  <button className="bg-neutral-500 font-semibold p-4 border rounded-[50px] text-white">
-                    Loading...
-                  </button>
-                ) : (
-                  <button className="bg-neutral-500 font-semibold p-4 border rounded-[50px] text-white">
-                    Download PDF report
-                  </button>
-                )
-              }
-            </PDFDownloadLink>
+            <DownloadLink
+              otherResults={otherResults}
+              importantResults={importantResults}
+              title={title}
+              slug={params?.slug}
+            />
           </div>
         </div>
-        <table className="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
-          <thead>
-            <tr className="bg-blue-500 text-white">
-              <th className="p-4 uppercase font-semibold text-sm text-left border">
-                Attribute
-              </th>
-              <th className="p-4 uppercase font-semibold text-sm text-left">
-                Value
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {importantResults.map((result, index) => (
-              <tr key={index} className="border-b border-gray-200">
-                <td className="p-4 font-medium">{result.Variable}</td>
-                <td className="p-4">{result.Value}</td>
-              </tr>
-            ))}
-            {otherResults.map((result, index) => (
-              <tr
-                key={index + importantResults.length}
-                className="border-b border-gray-200"
-              >
-                <td className="p-4 font-medium">{result.Variable}</td>
-                <td className="p-4">{result.Value}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <VinDataTable
+          importantResults={importantResults}
+          otherResults={otherResults}
+        />
         <div className="my-8">
           <SearchBlock placeholder="Decode another VIN" />
         </div>
