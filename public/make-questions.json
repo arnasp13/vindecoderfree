@@ -1,0 +1,102 @@
+[
+  {
+    "question_key": "importance_of_vin",
+    "question_template": "What is a VIN and why is it important for {make} vehicles?"
+  },
+  {
+    "question_key": "vin_character_count",
+    "question_template": "How many characters are there in a {make} VIN?"
+  },
+  {
+    "question_key": "vin_location",
+    "question_template": "Where can I find the VIN on my {make} vehicle?"
+  },
+  {
+    "question_key": "vin_decoding",
+    "question_template": "How can I decode my {make} VIN to determine the vehicle's history?"
+  },
+  {
+    "question_key": "vin_specific_info",
+    "question_template": "What specific information can I gather about my {make} from its VIN?"
+  },
+  {
+    "question_key": "vin_tools_online",
+    "question_template": "Are there any free online tools for {make} VIN decoding?"
+  },
+  {
+    "question_key": "vin_manufacturing_year",
+    "question_template": "How can I tell the manufacturing year of my {make} using the VIN?"
+  },
+  {
+    "question_key": "vin_country_of_manufacture",
+    "question_template": "Does the VIN reveal the country of manufacture for my {make}?"
+  },
+  {
+    "question_key": "vin_for_recalls",
+    "question_template": "How does {make} use the VIN for recalls and service campaigns?"
+  },
+  {
+    "question_key": "vin_engine_type",
+    "question_template": "Can I determine the engine type and model of my {make} using the VIN?"
+  },
+  {
+    "question_key": "vin_authenticity",
+    "question_template": "How can I verify if a {make} VIN is genuine and not tampered with?"
+  },
+  {
+    "question_key": "vin_structure_worldwide",
+    "question_template": "Are all {make} VINs structured in the same way worldwide?"
+  },
+  {
+    "question_key": "vin_first_three_characters",
+    "question_template": "What do the first three characters (World Manufacturer Identifier) of a {make} VIN represent?"
+  },
+  {
+    "question_key": "vin_body_type",
+    "question_template": "How can I tell the body type of my {make} using the VIN?"
+  },
+  {
+    "question_key": "vin_security_features",
+    "question_template": "Do {make} VINs contain any security features to prevent fraud?"
+  },
+  {
+    "question_key": "vin_for_insurance_registration",
+    "question_template": "How does a {make} VIN help with insurance and registration processes?"
+  },
+  {
+    "question_key": "vin_for_accident_history",
+    "question_template": "Can I find out about any accidents or damages to a {make} using its VIN?"
+  },
+  {
+    "question_key": "vin_parts_compatibility",
+    "question_template": "How is the {make} VIN linked with parts compatibility and ordering?"
+  },
+  {
+    "question_key": "vin_uniqueness",
+    "question_template": "Is the {make} VIN unique for each vehicle, and can it be duplicated?"
+  },
+  {
+    "question_key": "vin_vs_chassis",
+    "question_template": "What's the difference between a {make} VIN and a chassis number?"
+  },
+  {
+    "question_key": "vin_color_trim",
+    "question_template": "Can I use the VIN to determine the color or trim level of my {make}?"
+  },
+  {
+    "question_key": "vin_structure_update",
+    "question_template": "How often does {make} update its VIN structure and coding?"
+  },
+  {
+    "question_key": "vin_invalid_characters",
+    "question_template": "Are there any characters or symbols that will never appear in a {make} VIN?"
+  },
+  {
+    "question_key": "vin_for_law_enforcement",
+    "question_template": "How do law enforcement agencies use {make} VINs during investigations?"
+  },
+  {
+    "question_key": "vin_original_dealership",
+    "question_template": "Can I find out the original dealership where a {make} was sold using its VIN?"
+  }
+]

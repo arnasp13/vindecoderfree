@@ -1,10 +1,12 @@
 import Image from "next/image";
-import Data from "../../../data.json";
+import Data from "../../../public/data.json";
 import { CarMakeDetail } from "@/types";
 import { CarModelsList } from "@/components/car-models-list";
 import { SearchBlock } from "@/components/search-block";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { CarMakeList } from "@/components/car-make-list";
+import MakeQuestions from "../../../public/make-questions.json";
 
 type Props = {
   params: { slug: string };
@@ -37,7 +39,7 @@ export default function Home({ params }: { params: { slug: string } }) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-4">
-      <div className="w-full max-w-3xl p-6 bg-white rounded shadow-md">
+      <div className="w-full max-w-6xl p-6 bg-white rounded shadow-md">
         <div className="flex items-center space-x-4">
           <Image
             src={carData?.logo}
@@ -56,8 +58,27 @@ export default function Home({ params }: { params: { slug: string } }) {
           maxW="800px"
         />
 
+        <div className="my-10">
+          {MakeQuestions.map((item, i) => (
+            <div key={i} className="my-8">
+              <h2 className="font-semibold">
+                {item.question_template.replace("{make}", carData.make)}
+              </h2>
+              <p className="mt-1">{carData.faq[item.question_key]}</p>
+            </div>
+          ))}
+        </div>
+
+        <div>
+          <h2 className="font-semibold">List of {carData?.make} models:</h2>
+
+          <CarModelsList slug={extractedMake} />
+        </div>
+
         <div className="my-8">
-          <h4 className="font-semibold mb-4">Try example VINs:</h4>
+          <h2 className="font-semibold mb-4">
+            List of sample {carData?.make} VINs:
+          </h2>
           <div className="mb-12 flex flex-col md:flex-row gap-1 justify-between">
             {carData?.example_vins?.map((item) => (
               <Link
@@ -71,10 +92,14 @@ export default function Home({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        <div>
-          <h4 className="font-semibold">{carData?.make} models:</h4>
+        <div className="mb-8">
+          <h2 className="font-semibold mb-4">
+            Check out other car make vin decoding guides:
+          </h2>
 
-          <CarModelsList slug={extractedMake} />
+          <CarMakeList
+            carData={Data.filter((item) => item.make !== carData.make)}
+          />
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ interface ExampleVin {
 export interface CarMakeDetail {
   make: string;
   slug: string;
+  faq?: any;
   website?: string;
   logo: string;
   description: string;

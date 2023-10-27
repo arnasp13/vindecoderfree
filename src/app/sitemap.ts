@@ -1,6 +1,4 @@
-// app/sitemap.xml/route.js
-
-import Data from "../../data.json";
+import Data from "../../public/data.json";
 
 const URL = process.env.SITE_URL;
 

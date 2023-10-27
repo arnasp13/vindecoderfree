@@ -23,11 +23,11 @@ export const CarModelsList: FC<{ slug: string }> = ({ slug }) => {
         <>
           {data ? (
             <>
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-2">
+              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                 {data.map((model: CarModel, index: number) => (
                   <div
                     key={index}
-                    className="border bg-neutral-200 p-4 rounded shadow-md hover:shadow-lg transition-shadow duration-300"
+                    className="border bg-neutral-200 p-2 rounded shadow-md hover:shadow-lg transition-shadow duration-300"
                   >
                     <h3 className="text-lg font-semibold">
                       Decode {model?.Make_Name} {model?.Model_Name} VIN
