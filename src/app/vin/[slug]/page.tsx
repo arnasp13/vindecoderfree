@@ -40,9 +40,9 @@ const importantVariables = [
 ];
 
 const getTitle = ({ data }: { data: VinResult[] }) => {
-  const year = data.find((item) => item.Variable === "Model Year")?.Value;
-  const make = data.find((item) => item.Variable === "Make")?.Value;
-  const model = data.find((item) => item.Variable === "Model")?.Value;
+  const year = data.find((item) => item.Variable === "Model Year")?.Value || '';
+  const make = data.find((item) => item.Variable === "Make")?.Value || '';
+  const model = data.find((item) => item.Variable === "Model")?.Value || '';
 
   return `${year} ${make} ${model} VIN details`;
 };
