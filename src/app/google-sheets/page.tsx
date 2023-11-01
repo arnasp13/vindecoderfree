@@ -15,7 +15,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center py-12 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4">
-          Uncover The Secrets Behind Any Vehicle.
+          VinoVista: Uncover The Secrets Behind Any Vehicle.
         </h1>
         <p className="text-xl mb-8">
           Decode any Vehicle Identification Number (VIN) to reveal in-depth
@@ -43,8 +43,7 @@ export default function Home() {
           {/* Feature Card 1 */}
           <div className="flex flex-col items-center">
             <div className="mb-6 w-20 h-20 flex items-center justify-center bg-white text-blue-600 rounded-full">
-              <i className="fas fa-car-side fa-3x"></i>{" "}
-              {/* You can replace this with an SVG or any other icon */}
+              <p className="text-2xl">1</p>
             </div>
             <h3 className="text-2xl font-semibold mb-4">
               Detailed Vehicle Information
@@ -57,8 +56,7 @@ export default function Home() {
           {/* Feature Card 2 */}
           <div className="flex flex-col items-center">
             <div className="mb-6 w-20 h-20 flex items-center justify-center bg-white text-blue-600 rounded-full">
-              <i className="fas fa-wrench fa-3x"></i>{" "}
-              {/* You can replace this with an SVG or any other icon */}
+              <p className="text-2xl">2</p>
             </div>
             <h3 className="text-2xl font-semibold mb-4">
               For Enthusiasts & Dealerships
@@ -71,8 +69,7 @@ export default function Home() {
           {/* Feature Card 3 */}
           <div className="flex flex-col items-center">
             <div className="mb-6 w-20 h-20 flex items-center justify-center bg-white text-blue-600 rounded-full">
-              <i className="fas fa-bolt fa-3x"></i>{" "}
-              {/* You can replace this with an SVG or any other icon */}
+              <p className="text-2xl">3</p>
             </div>
             <h3 className="text-2xl font-semibold mb-4">Quick & Efficient</h3>
             <p className="text-center">

@@ -8,15 +8,19 @@ export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
   placeholder = "Enter your VIN",
   maxW = "600px",
 }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [vin, setVin] = useState("");
   const [errorMessage, setErrorMessage] = useState(""); // State to store the error message
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleDecodeClick = () => {
+    setIsLoading(true);
+
     // Validation for VIN length
     if (vin.length < 5 || vin.length > 20) {
       setErrorMessage("VIN should be between 5 and 20 characters.");
+      setIsLoading(false);
       return;
     }
 
@@ -24,6 +28,7 @@ export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
       router.push(`/vin/${vin}`);
     } else {
       alert("Please enter a VIN to decode.");
+      setIsLoading(false);
     }
   };
 
@@ -48,11 +53,12 @@ export const SearchBlock: FC<{ placeholder?: string; maxW?: string }> = ({
           }}
           onKeyPress={handleKeyPress} // Add the key press listener
         />
+
         <button
           className="absolute top-1/2 transform right-6 -translate-y-1/2 font-medium bg-primary-1 p-3 text-white rounded-[100px] focus:outline-none"
           onClick={handleDecodeClick}
         >
-          Decode
+          {isLoading ? 'Loading...' : 'Decode'}
         </button>
 
         {/* Conditionally render the error message */}
