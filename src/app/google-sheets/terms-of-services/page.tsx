@@ -3,7 +3,8 @@ import Head from "next/head";
 
 export const metadata: Metadata = {
   title: 'VINDecoderFree.com Terms of Service',
-  description: 'Welcome to the Terms of Service for VinoVista: VIN Insight.'
+  robots: 'noindex, nofollow',
+  description: 'Welcome to the Terms of Service for VinoVista: VIN Insight.',
 }
 
 const TermsOfService = () => {
