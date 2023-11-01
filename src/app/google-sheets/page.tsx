@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
         <p className="text-xl mb-8">
           Decode any Vehicle Identification Number (VIN) to reveal in-depth
-          details.
+          details using our Google Sheet Add-On
         </p>
         <Image
           src="/google-sheet.gif"
@@ -78,6 +78,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+            <section className="py-20 flex flex-col gap-6 items-center">
+        <h2 className="text-4xl font-bold text-center">Additional links</h2>
+        <div className="flex gap-2 flex-col sm:flex-row">
+        <Link href="/google-sheets/terms-of-services" target="_blank" className="p-3 mt-4 bg-white rounded-xl max-w-xs text-center">Terms and services</Link>
+        <Link href="/google-sheets/privacy-policy" target="_blank" className="p-3 mt-4 bg-white rounded-xl max-w-xs text-center">Privacy policy</Link>
+                <Link href="https://tally.so/r/wLKLEJ" target="_blank" className="p-3 mt-4 bg-white rounded-xl max-w-xs text-center">Feel free to give feedback</Link>
+
+        </div>
+        </section>  
     </div>
   );
 }
