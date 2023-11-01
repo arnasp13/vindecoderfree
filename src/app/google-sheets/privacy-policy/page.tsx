@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import Head from "next/head";
+
+export const metadata: Metadata = {
+  title: 'VINDecoderFree.com Privacy Policy',
+  description: 'Welcome to the Privacy Policy for VinoVista: VIN Insight.'
+}
 
 const PrivacyPolicy = () => {
   return (
@@ -18,7 +24,7 @@ const PrivacyPolicy = () => {
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">1. Introduction</h2>
           <p>
-            Welcome to the Privacy Policy for VinoVista: VIN Insight . This
+            Welcome to the Privacy Policy for VinoVista: VIN Insight. This
             policy outlines the types of data we collect from our users, how we
             use it, and the steps we take to protect it.
           </p>
