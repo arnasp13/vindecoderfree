@@ -50,7 +50,7 @@ export default function Home() {
           <section>
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="max-w-screen-md mb-8 lg:mb-16">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
                   What are we offering
                 </h2>
               </div>
@@ -64,10 +64,10 @@ export default function Home() {
                       alt="Computer Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold">
                     VIN Decoder Website
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Access our free website for comprehensive vehicle details
                     with just a VIN.{" "}
                   </p>
@@ -81,7 +81,7 @@ export default function Home() {
                       alt="Google Sheets Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Google Sheets Add-On
                   </h3>
                   <p className="text-gray-500 mb-3">
@@ -100,7 +100,7 @@ export default function Home() {
                       alt="Chrome Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Chrome Extension
                   </h3>
                   <p className="text-gray-500 mb-3">
@@ -124,10 +124,10 @@ export default function Home() {
           <section>
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="max-w-screen-md mb-8 lg:mb-16">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
                   Everything you need in a VIN Decoder
                 </h2>
-                <p className="text-gray-500 sm:text-xl dark:text-gray-400">
+                <p className="text-gray-500 sm:text-xl ">
                   At VinDecoderFree.com, we specialize in areas where
                   technology, innovation, and resources can reveal lasting value
                   and propel automotive insights.
@@ -135,7 +135,7 @@ export default function Home() {
               </div>
               <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     <Image
                       src="/icons/book.svg"
                       width={30}
@@ -143,15 +143,15 @@ export default function Home() {
                       alt="Book Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     VIN Decoder Essentials
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Let us provide the best data sources for you.
                   </p>
                 </div>
                 <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     <Image
                       src="/icons/details.svg"
                       width={30}
@@ -159,16 +159,16 @@ export default function Home() {
                       alt="Details Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Vehicle Details
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Input a VIN and retrieve the vehicle&apos;s Year, Make,
                     Model, and Trims directly from the manufacturer.
                   </p>
                 </div>
                 <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     <Image
                       src="/icons/car.svg"
                       width={30}
@@ -176,17 +176,17 @@ export default function Home() {
                       alt="Car Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Vehicle Options
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Obtain comprehensive descriptions and codes of vehicle
                     features as provided by the original equipment manufacturer
                     (OEM).
                   </p>
                 </div>
                 <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     <Image
                       src="/icons/color.svg"
                       width={30}
@@ -194,16 +194,16 @@ export default function Home() {
                       alt="Color Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Color Specifications
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Discover the vehicle&apos;s interior and exterior colors as
                     per the manufacturer&apos;s standards.
                   </p>
                 </div>
                 <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     <Image
                       src="/icons/vehicle-services.svg"
                       width={30}
@@ -211,16 +211,16 @@ export default function Home() {
                       alt="Book Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Vehicle Specs
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Access a full breakdown of the vehicle&apos;s specifications
                     as given by the manufacturer.
                   </p>
                 </div>
                 <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     <Image
                       src="/icons/speedometer.svg"
                       width={30}
@@ -228,10 +228,10 @@ export default function Home() {
                       alt="Speedometer Icon"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  <h3 className="mb-2 text-xl font-bold ">
                     Powertrain Details
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Dive into in-depth information about the vehicle&apos;s
                     engine and transmission, sourced from OEM databases.
                   </p>
