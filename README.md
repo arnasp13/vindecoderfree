@@ -2,10 +2,6 @@
 
 VIN Decoder Free is a comprehensive online tool for decoding Vehicle Identification Numbers (VINs) for all car makes in the USA. With our platform, you can easily obtain detailed information about a vehicle just by entering its VIN.
 
-![Demo](/public/using.gif)
-
-<!-- ![Demo 2](/public/using-2.gif) -->
-
 ## Features :rocket:
 
 - **Comprehensive Database**: Covers all car makes in the USA.
@@ -21,6 +17,11 @@ VIN Decoder Free is a comprehensive online tool for decoding Vehicle Identificat
 2. Enter the VIN in the search bar.
 3. Click on 'Decode' and get detailed information about the vehicle.
 4. Alternatively, you can use our [Chrome Extension](https://chrome.google.com/webstore/detail/vindecoderfreecom/ckghkkfgljadklgemfelfckaiimbnjki) for a seamless decoding experience while browsing.
+
+## Using Chrome Extension (2 methods)
+
+![Demo](/public/using.gif)
+![Demo 2](/public/using-2.gif)
 
 ## Contribution :heart:
 
