@@ -1,37 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VIN Decoder Free
 
-## Getting Started
+VIN Decoder Free is a comprehensive online tool for decoding Vehicle Identification Numbers (VINs) for all car makes in the USA. With our platform, you can easily obtain detailed information about a vehicle just by entering its VIN.
 
-First, run the development server:
+## Features :rocket:
+- **Comprehensive Database**: Covers all car makes in the USA.
+- **Fast and Accurate**: Get detailed vehicle information in seconds.
+- **User-Friendly Interface**: Easily enter and decode VINs with a seamless UI.
+- **Mobile Responsive**: Access VIN Decoder Free on-the-go, from any device.
+- **Secure**: We prioritize your privacy. The VINs you search are not stored.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How to Use :wrench:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Visit [vindecoderfree.com](https://www.vindecoderfree.com/)
+2. Enter the VIN in the search bar.
+3. Click on 'Decode' and get detailed information about the vehicle.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribution :heart:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+We welcome contributions! If you find any issues or want to add new features, feel free to open a pull request. 
 
-## Learn More
+## Feedback :memo:
 
-To learn more about Next.js, take a look at the following resources:
+Your feedback is invaluable to us. If you have any suggestions, complaints, or feedback, please open an issue or contact us at [arnaspuidokas6@gmail.com](mailto:arnaspuidokas6@gmail.com).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License :page_with_curl:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the MIT License.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# vindecoderfree
+&copy; 2023 VIN Decoder Free. All rights reserved.
