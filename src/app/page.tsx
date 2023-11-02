@@ -109,7 +109,7 @@ export default function Home() {
                     information, all sourced directly from the original
                     equipment manufacturer (OEM).
                   </p>
-                  <Link href="/https://chrome.google.com/webstore/detail/vindecoderfreecom/ckghkkfgljadklgemfelfckaiimbnjki">
+                  <Link href="https://chrome.google.com/webstore/detail/vindecoderfreecom/ckghkkfgljadklgemfelfckaiimbnjki">
                     Get Chrome Extension
                   </Link>
                 </div>
