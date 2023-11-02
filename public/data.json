@@ -14,7 +14,7 @@
       },
       {
         "model": "Focus",
-        "year": 2005,
+        "year": 1990,
         "vin": "1FAPP34P1LX"
       },
       {
@@ -60,12 +60,12 @@
     "example_vins": [
       {
         "model": "3 Series",
-        "year": 2000,
+        "year": 2001,
         "vin": "WBAAV33471FJ"
       },
       {
         "model": "5 Series",
-        "year": 2010,
+        "year": 2014,
         "vin": "WBA5B1C59ED"
       },
       {
@@ -104,6 +104,206 @@
     "website": "https://www.bmw.com",
     "about": "BMW, an abbreviation for Bayerische Motoren Werke AG, is a German multinational company known for producing luxury vehicles and motorcycles.",
     "description": "Bayerische Motoren Werke AG, commonly referred to as BMW, is a German multinational company known for its luxury and performance vehicles. Founded in 1916, BMW initially started as an aircraft engine manufacturer and later ventured into motorcycles and cars.\nBMW cars are synonymous with precision, craftsmanship, and a unique blend of performance and luxury. The brand's tagline 'The Ultimate Driving Machine' accurately captures its essence. With a rich racing heritage and commitment to innovation, BMW continues to set benchmarks in the automotive world, combining cutting-edge technology with unparalleled driving dynamics."
+  },
+  {
+    "make": "Kia",
+    "slug": "kia",
+    "logo": "https://www.kiamedia.com/image/low/17388/1/2?v=3",
+    "models": ["Sorento", "Sportage", "Forte", "Stinger", "Telluride"],
+    "website": "https://www.kia.com",
+    "description": "Kia Corporation, usually known as Kia, is a leading name in the global automotive industry. Founded in 1944, Kia originally started as a manufacturer of bicycle parts. Over the decades, Kia has grown to become a major player in the automobile market, known for its affordable and reliable vehicles. With a focus on innovation and design, Kia has produced various award-winning models that cater to a wide range of customers.",
+    "example_vins": [
+      {
+        "model": "Sorento",
+        "year": 2005,
+        "vin": "KNDJC73545X"
+      },
+      {
+        "model": "Sportage",
+        "year": 2019,
+        "vin": "KNDPR3A64KX"
+      },
+      {
+        "model": "Stinger",
+        "year": 2021,
+        "vin": "KNAE55LC8M7"
+      }
+    ],
+    "about": "Kia, a South Korean automaker, is recognized for its innovative features and stylish designs, offering a blend of performance and value.",
+    "faq": {
+      "importance_of_vin": "For Kia vehicles, the Vehicle Identification Number (VIN) is a crucial identifier. It provides specific details about the car's origin, manufacturing details, and unique characteristics. It's essential for keeping service records, processing warranty claims, and verifying the authenticity of a Kia car.",
+      "vin_character_count": "Like other major automakers, Kia's VIN consists of 17 characters. Each character or set of characters tells a unique story about the car's attributes and origin.",
+      "vin_location": "On a Kia, the VIN can primarily be found on the lower-left corner of the dashboard, viewable from the outside through the windshield. Additionally, it's often located on a label inside the driver's side door frame.",
+      "vin_decoding": "Decoding a Kia's VIN reveals extensive information about the vehicle. From its place of manufacture to its model, engine type, series, and the specific factory it originated from, the VIN provides a plethora of details.",
+      "vin_specific_info": "A Kia VIN provides crucial information. The initial characters represent the manufacturer and origin, while the subsequent characters provide details like vehicle type, engine variant, series, production year, and assembly location.",
+      "vin_tools_online": "There are several online platforms that specialize in decoding Kia VINs. These tools assist owners or potential buyers in uncovering detailed vehicle data, from manufacturing details to potential recalls. Kia's official website also has a VIN lookup tool for comprehensive information.",
+      "vin_manufacturing_year": "In a Kia VIN, the 10th character represents the car's production year. Decoding this character reveals the exact year the Kia was made.",
+      "vin_country_of_manufacture": "The initial characters of the Kia VIN, especially the first one, indicate the car's country or region of production. Given Kia's South Korean roots, many VINs signify South Korea as the manufacturing location, though Kia has factories worldwide.",
+      "vin_for_recalls": "Kia uses the VIN for recall and service campaigns. By entering the VIN on Kia's official website, owners can quickly check if their car is subject to any recalls, ensuring its best performance and safety.",
+      "vin_engine_type": "Specific characters within the Kia VIN, particularly those in the middle, provide insights about the engine. Whether it's a powerful V6 or an efficient four-cylinder, the VIN offers details.",
+      "vin_authenticity": "To confirm the authenticity of a Kia VIN, it's advisable to cross-check with registration or insurance documents. Additionally, reliable online VIN verification platforms or visiting a Kia dealership can offer further authentication checks.",
+      "vin_structure_worldwide": "Being a global brand, Kia follows the universally accepted 17-character VIN format. However, Kia's encoding might have slight variations based on regional or manufacturing differences.",
+      "vin_first_three_characters": "In a Kia VIN, the first three characters, known as the World Manufacturer Identifier (WMI), denote the car's country of origin and the brand. For Kia, this segment reflects the brand's heritage and origin.",
+      "vin_body_type": "Characters within the Kia VIN, particularly those in the center, provide information about the car's body design. Whether it's a compact sedan, a spacious SUV, or a sporty coupe, the VIN reveals the vehicle's body style.",
+      "vin_security_features": "Kia incorporates robust security features within its VINs to prevent tampering and forgery. Check digits, detailed engravings, and sometimes security labels ensure the VIN's genuineness.",
+      "vin_for_insurance_registration": "Insurance companies and registration authorities heavily depend on the Kia VIN. It helps them identify the exact model, year, and engine type of the car, ensuring accurate documentation.",
+      "vin_for_accident_history": "Kia VINs can be used to uncover a vehicle's history, revealing any past accidents or issues. This information is crucial for potential buyers or current owners to maintain transparency.",
+      "vin_parts_compatibility": "When looking for replacement parts, the Kia VIN is vital. It allows dealers and mechanics to find parts that perfectly fit the specific model and year, ensuring compatibility.",
+      "vin_uniqueness": "Each Kia VIN is unique and specific, providing a detailed identity to the vehicle. No two Kia cars will ever share the same VIN, ensuring clear identification.",
+      "vin_age_determination": "The age of a Kia vehicle can be quickly determined through its VIN, especially the 10th character. This specific character denotes the production year of the car.",
+      "vin_production_number": "The last set of characters in a Kia VIN represents the car's unique production number. It distinguishes the vehicle from others produced in the same batch or model year."
+    }
+  },
+  {
+    "make": "Audi",
+    "slug": "audi",
+    "logo": "https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2022/03/03133433/Audi-logo-history-and-meaning-L-03-03-1024x640.jpg",
+    "models": ["A3", "Q5", "R8"],
+    "website": "https://www.audi.com",
+    "description": "Audi AG, commonly referred to as Audi, is a prestigious name in the luxury automobile market. Founded in 1910 by August Horch, Audi's name is derived from the Latin translation of 'Horch', meaning 'listen'. Over the years, Audi has positioned itself as an innovator, introducing quattro all-wheel drive in 1980 and pioneering various technological advancements. With a slogan of 'Vorsprung durch Technik', meaning 'Advancement through Technology', Audi emphasizes innovation, quality, and performance in its vehicle lineup.",
+    "example_vins": [
+      {
+        "model": "A3",
+        "year": 1980,
+        "vin": "WAUCB34D1A"
+      },
+      {
+        "model": "Q5",
+        "year": 2018,
+        "vin": "WAUZZZF5XJ"
+      },
+      {
+        "model": "R8",
+        "year": 2020,
+        "vin": "WUAEACFX7L"
+      }
+    ],
+    "about": "Audi, a German luxury automaker, is known for its advanced technology and premium vehicles, blending elegance with performance.",
+    "faq": {
+      "importance_of_vin": "For Audi vehicles, the Vehicle Identification Number (VIN) is a critical identifier. It embeds specific data about the vehicle's genesis, manufacturing specifications, and various distinctive factors. It's pivotal for maintaining service records, processing warranty claims, and verifying the genuineness of an Audi vehicle.",
+      "vin_character_count": "Consistent with most leading automakers, Audi's VIN encompasses 17 characters. Each character or group of characters narrates a unique tale about the vehicle's features and origin.",
+      "vin_location": "On an Audi, the VIN is primarily located on the lower-left section of the dashboard in front of the steering wheel. It's visible from the exterior through the windshield. It can also be found on a label inside the driver's side door frame.",
+      "vin_decoding": "Deciphering an Audi's VIN provides extensive details about the premium vehicle. From its manufacturing location to its model, engine variant, series, and the exact factory it was built in, the VIN discloses a wealth of information.",
+      "vin_specific_info": "An Audi VIN provides essential data. The initial characters denote the manufacturer and place of origin, while subsequent characters reveal details like vehicle type, engine variant, series, production year, and the assembly facility.",
+      "vin_tools_online": "Numerous online platforms specialize in decoding Audi VINs. They aid owners or prospective buyers in discovering intricate vehicle details, from production specifics to potential recalls. Audi's official site also features a VIN lookup tool for comprehensive data.",
+      "vin_manufacturing_year": "In an Audi VIN, the 10th character is indicative of the vehicle's production year. Decoding this character unveils the exact year the Audi was manufactured.",
+      "vin_country_of_manufacture": "The beginning characters of the Audi VIN, especially the first, highlight the vehicle's country or region of production. Given Audi's German heritage, many VINs identify Germany as the production location, but Audi also operates factories globally.",
+      "vin_for_recalls": "Audi employs the VIN for recall and maintenance campaigns. By inputting the VIN on Audi's official portal, owners can swiftly verify if their vehicle is subject to any recalls, ensuring optimal performance and safety.",
+      "vin_engine_type": "Specific characters in the Audi VIN, especially those in the center, reveal details about the engine. It could be a potent V6, a turbocharged inline-four, or a hybrid system; the VIN provides insights.",
+      "vin_authenticity": "To validate an Audi VIN's authenticity, it's recommended to cross-reference with registration or insurance papers. Furthermore, trusted online VIN verification platforms or visiting an Audi dealership can offer additional authenticity checks.",
+      "vin_structure_worldwide": "Being an international brand, Audi adheres to the universally accepted 17-character VIN structure. However, Audi's encoding might vary slightly based on regional or manufacturing differences.",
+      "vin_first_three_characters": "In an Audi VIN, the inaugural three characters, known as the World Manufacturer Identifier (WMI), signify the vehicle's origin country and the brand. For Audi, this section is indicative of the brand's legacy and origin.",
+      "vin_body_type": "Characters within the Audi VIN, particularly those in the middle, give insights into the vehicle's body design. Be it a sleek coupe, a spacious SUV, or an elegant sedan, the VIN discloses the vehicle's body style.",
+      "vin_security_features": "Audi integrates stringent security features within its VINs to deter tampering and counterfeiting. Check digits, intricate engravings, and occasionally security labels ensure the VIN's credibility.",
+      "vin_for_insurance_registration": "Insurance agencies and registration authorities heavily rely on the Audi VIN. It assists them in identifying the vehicle's exact model, year, and engine type, ensuring accurate documentation.",
+      "vin_for_accident_history": "Audi VINs can help uncover a vehicle's history, revealing past accidents or other concerns. Such insights are invaluable for potential buyers or current owners to maintain transparency.",
+      "vin_parts_compatibility": "When seeking replacement parts, the Audi VIN is essential. It enables dealers and mechanics to source parts that perfectly match the specific model and year, guaranteeing compatibility.",
+      "vin_uniqueness": "Each Audi VIN is distinct and unique, serving as a precise identifier for that specific vehicle. No two Audi vehicles have identical VINs, making it an infallible tool for tracing vehicle specifics.",
+      "vin_vs_chassis": "The VIN offers a holistic overview of an Audi's details, while the chassis number mainly identifies the vehicle's frame. Both are vital, but the VIN offers a more comprehensive and standardized insight.",
+      "vin_color_trim": "The VIN doesn't directly convey the color or trim level of the Audi. However, authorized dealerships and select online platforms can decode the VIN to retrieve these details from Audi's databases.",
+      "vin_structure_update": "Occasionally, Audi may adjust its VIN structure, especially when launching innovative models or adapting to new standards. However, these VINs will always conform to the 17-character global standard.",
+      "vin_invalid_characters": "In Audi VINs, certain characters, like 'I', 'O', and 'Q', are purposefully omitted to avoid confusion with '1' and '0'. This practice, followed worldwide, ensures clarity in VINs.",
+      "vin_for_law_enforcement": "For law enforcement agencies, Audi VINs are invaluable. They facilitate efficient vehicle tracking and identification, verifying ownership and probing any associated criminal history.",
+      "vin_original_dealership": "While the VIN doesn't explicitly reveal the dealership that initially sold the Audi, specialized databases or Audi's customer service can decode the VIN to identify the original point of sale and related details."
+    }
+  },
+  {
+    "make": "Subaru",
+    "slug": "subaru",
+    "logo": "https://1000logos.net/wp-content/uploads/2018/03/Subaru-Logo-1999.jpg",
+    "models": ["Outback", "Forester", "Impreza", "Legacy", "Crosstrek"],
+    "website": "https://www.subaru.com",
+    "description": "Subaru Corporation, often known as Subaru, is a prominent name in the global automotive market. Established in 1953, Subaru is renowned for its boxer engine layout in most vehicles above 1500 cc and its use of the all-wheel-drive drivetrain layout since the 1970s. With a commitment to safety and innovation, Subaru vehicles are well-regarded for their durability and off-road capabilities, making them favorites among outdoor enthusiasts.",
+    "example_vins": [
+      {
+        "model": "Outback",
+        "year": 2018,
+        "vin": "4S4BSAAC2J3"
+      },
+      {
+        "model": "Forester",
+        "year": 2020,
+        "vin": "JF2SKAGC8LH"
+      },
+      {
+        "model": "Impreza",
+        "year": 2022,
+        "vin": "4S3GKAA62N3"
+      }
+    ],
+    "about": "Subaru, a Japanese automaker, is known for its unique boxer engine design and symmetrical all-wheel-drive system. The brand has a strong reputation for producing durable and reliable vehicles, making it a top choice for those who seek adventure and value safety.",
+    "faq": {
+      "importance_of_vin": "For Subaru vehicles, the Vehicle Identification Number (VIN) is an essential identifier. It offers specific details about the vehicle's origin, manufacturing specifics, and distinct attributes. It's vital for maintenance records, handling warranty claims, and verifying a Subaru vehicle's authenticity.",
+      "vin_character_count": "Like other major automakers, Subaru's VIN is composed of 17 characters. Each character or group of characters reveals a unique aspect of the vehicle's origin and attributes.",
+      "vin_location": "On a Subaru, the VIN is primarily found on the lower-left corner of the dashboard, visible from outside through the windshield. Additionally, it can be found on a sticker inside the driver's side door frame.",
+      "vin_decoding": "Decoding a Subaru's VIN provides comprehensive information about the vehicle. It uncovers details such as its place of manufacture, model, engine type, series, and the specific factory from which it originated.",
+      "vin_specific_info": "A Subaru VIN offers vital information. Initial characters denote the manufacturer and origin, while subsequent characters reveal details like vehicle type, engine variant, series, production year, and assembly location.",
+      "vin_tools_online": "Various online platforms can decode Subaru VINs, providing owners or prospective buyers with detailed vehicle data, from manufacturing information to potential recalls. Subaru's official website also offers a VIN lookup tool.",
+      "vin_manufacturing_year": "In a Subaru VIN, the 10th character signifies the vehicle's production year. Decoding this character reveals the exact year the Subaru was manufactured.",
+      "vin_country_of_manufacture": "The initial characters of the Subaru VIN, particularly the first, highlight the vehicle's country or region of production. As Subaru is a Japanese brand, many VINs indicate Japan as the manufacturing location, though Subaru has plants in various parts of the world.",
+      "vin_for_recalls": "Subaru uses the VIN for recall and service campaigns. By entering the VIN on Subaru's official website, owners can swiftly determine if their vehicle is affected by any recalls, ensuring its safety and performance.",
+      "vin_engine_type": "Characters within the Subaru VIN, especially those in the middle, provide insights about the engine. This can help identify whether the vehicle has a boxer engine or any other variant.",
+      "vin_authenticity": "To verify the authenticity of a Subaru VIN, it's recommended to cross-reference with registration or insurance documents. Additionally, trusted online VIN verification platforms or visiting a Subaru dealership can provide further verification.",
+      "vin_structure_worldwide": "As a global brand, Subaru adheres to the universally accepted 17-character VIN format. However, Subaru's encoding might differ slightly based on regional or manufacturing variations.",
+      "vin_first_three_characters": "In a Subaru VIN, the first three characters, known as the World Manufacturer Identifier (WMI), represent the vehicle's country of origin and the brand. For Subaru, this segment reflects the brand's heritage and origin.",
+      "vin_body_type": "Characters within the Subaru VIN, particularly those in the center, reveal information about the vehicle's body design. This can help determine if it's a sedan, SUV, or any other body type.",
+      "vin_security_features": "Subaru incorporates robust security features in its VINs to prevent tampering and forgery. Check digits, detailed engravings, and sometimes security labels ensure the VIN's genuineness.",
+      "vin_for_insurance_registration": "Insurance companies and registration authorities heavily rely on the Subaru VIN. It helps them identify the exact model, year, and engine type, ensuring accurate documentation and policies.",
+      "vin_for_accident_history": "Subaru VINs can be used to unearth a vehicle's history, showcasing any past accidents or issues. This data is essential for potential buyers or current owners to ensure transparency and trust.",
+      "vin_parts_compatibility": "When sourcing replacement parts, the Subaru VIN is invaluable. It enables dealers and mechanics to locate parts that perfectly match the specific model and year, ensuring compatibility and quality.",
+      "vin_uniqueness": "Each Subaru VIN is distinct and specific, offering a detailed identity to the vehicle. No two Subaru vehicles will ever have identical VINs, assuring clear differentiation.",
+      "vin_age_determination": "The age of a Subaru vehicle can be swiftly determined using its VIN, especially the 10th character. This specific character reveals the production year of the vehicle.",
+      "vin_production_number": "The concluding characters in a Subaru VIN signify the vehicle's unique production number. It differentiates the vehicle from others produced in the same batch or model year."
+    }
+  },
+  {
+    "make": "Lexus",
+    "slug": "lexus",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Lexus_division_emblem.svg/1200px-Lexus_division_emblem.svg.png",
+    "models": ["ES", "LS", "RX", "GX", "LC", "UX"],
+    "website": "https://www.lexus-cosmicluxury.com",
+    "description": "A beacon of opulence in the car realm, Lexus is like the universe's favorite orchestra—every component fine-tuned to resonate a symphony of luxury. It's not just a vehicle, but a chariot of the stars, designed for those who appreciate the finer constellations of life.",
+    "example_vins": [
+      {
+        "model": "ES",
+        "year": 2016,
+        "vin": "JTHBA1D24G5"
+      },
+      {
+        "model": "LS",
+        "year": 2017,
+        "vin": "JTHCL5EF7H2"
+      },
+      {
+        "model": "RX",
+        "year": 2018,
+        "vin": "2T2BZMCA5JC"
+      }
+    ],
+    "faq": {
+      "importance_of_vin": "For a Lexus, the Vehicle Identification Number (VIN) is more than just a serial number. It's the DNA, revealing the vehicle's lineage, craftsmanship nuances, and exclusive attributes. It stands as the lighthouse for service histories, warranty redemptions, and affirming the pedigree of a Lexus marvel.",
+      "vin_character_count": "Embodying the global automotive signature, Lexus's VIN boasts 17 characters. Each symbol, like an exquisite note in a melody, portrays a unique facet of the vehicle's heritage and specifications.",
+      "vin_location": "On a Lexus, the VIN graces the lower left expanse of the dashboard, easily glimpsed from outside through the windshield. A secondary imprint can be found adorning a label, elegantly placed inside the driver's side door frame.",
+      "vin_decoding": "Deciphering a Lexus VIN is akin to unwrapping its legacy. Each character unveils specifics, from the birthplace of the car, its model iteration, engine distinction, series, to the exact atelier where it was brought to life.",
+      "vin_specific_info": "A Lexus VIN is a tapestry of insights. Early characters whisper of its creator and birthplace, while the latter symbols delve deeper, narrating tales of type, engine uniqueness, annual chronicle, and the very workshop of its inception.",
+      "vin_tools_online": "The digital realm offers a myriad of sanctuaries to decode Lexus VINs, gifting owners or aspirants with a saga of the vehicle, from its crafting nuances to potential celestial recalls. The official Lexus alcove in cyberspace also bestows a VIN exploration instrument.",
+      "vin_manufacturing_year": "In the intricate dance of Lexus VIN characters, the 10th step signifies the epoch of its creation. Interpreting this dancer reveals the exact annum in which Lexus painted its magic.",
+      "vin_country_of_manufacture": "The prologue characters of the Lexus VIN, especially the pioneer, sing of the realm of its crafting. While Lexus weaves its tales predominantly from Japan, its tales echo from various corners of the globe.",
+      "vin_for_recalls": "Lexus harnesses the VIN as a beacon for recall and celestial service campaigns. By serenading the VIN on Lexus's sanctum in the digital realm, guardians can swiftly decipher if their chariot has been summoned for any celestial upgrades.",
+      "vin_engine_type": "Symbols nestled within the Lexus VIN, especially those in the heart, bear revelations about its heartbeat – the engine. This lore aids in discerning if the vehicle carries the signature V8 purr or another symphony.",
+      "vin_authenticity": "To affirm the genuineness of a Lexus VIN, it's advised to echo it with documents of legacy or protection. Moreover, revered online VIN sanctuaries or a pilgrimage to a Lexus enclave can offer further affirmation.",
+      "vin_structure_worldwide": "Being a luminary in the automotive cosmos, Lexus adheres to the globally revered 17-character VIN choreography. Yet, Lexus's script might hold subtle variances rooted in regional or crafting tapestries.",
+      "vin_first_three_characters": "In a Lexus VIN's prologue, the inaugural trio, known as the World Manufacturer Identifier (WMI), narrate of its realm of origin and the insignia. For Lexus, this segment is a hymn of its illustrious lineage and roots.",
+      "vin_body_type": "Symbols in the central tapestry of the Lexus VIN sing tales of its silhouette. This lore aids in discerning if it's a coupe's elegance, an SUV's grandeur, or another canvas.",
+      "vin_security_features": "Lexus, ever the guardian of its legacy, imbues its VINs with formidable protections against the shadows. Check runes, intricate engravings, and occasionally protective emblems ensure the VIN's authenticity.",
+      "vin_for_insurance_registration": "Guardians of protection and realm registrars lean heavily on the Lexus VIN. It aids them in echoing the exact chronicle, model, and heart's rhythm, ensuring documents and safeguards are woven flawlessly.",
+      "vin_for_accident_history": "Lexus VINs, when serenaded, can unveil a chariot's past, echoing tales of past skirmishes or serenades. This lore is a boon for aspirants or guardians, ensuring a transparent and trusted bond.",
+      "vin_parts_compatibility": "In the quest for parts replacement, the Lexus VIN emerges as the guiding star. It enables the maestros and artificers to source components that resonate perfectly with the model's epoch, ensuring harmony and craftsmanship.",
+      "vin_uniqueness": "Every Lexus VIN is a unique star in the automotive cosmos, narrating its distinct tale. No two Lexus chariots will ever echo the same VIN, ensuring a clear distinction in their legacies.",
+      "vin_age_determination": "The age of a Lexus marvel can be discerned with grace using its VIN, especially the 10th symbol. This specific rune unveils the epoch when Lexus painted its enchantment.",
+      "vin_production_number": "The finale characters in a Lexus VIN dance to the tune of the vehicle's unique crafting number. It distinguishes the chariot from its siblings crafted in the same epoch or annual chronicle."
+    },
+    "about": "Lexus is not just a brand—it's an odyssey into the realms of elegance. Every turn of the key ignites a journey beyond ordinary, where luxury isn't just felt but experienced in every molecule of the air. It's like riding on a cloud crafted by celestial beings."
   },
   {
     "make": "Toyota",
