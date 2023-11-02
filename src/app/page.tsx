@@ -45,6 +45,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/* <div className="py-12">
+        <div>
+          <section className="bg-white dark:bg-gray-900">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+              <div className="max-w-screen-md mb-8 lg:mb-16">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                  What are we offering
+                </h2>
+              </div>
+              <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    <Image
+                      src="/icons/book.svg"
+                      width={30}
+                      height={30}
+                      alt="Book Icon"
+                    />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                    Website Integration
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Let us provide the best data sources for you.
+                  </p>
+                </div>
+                <div>
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    <Image
+                      src="/icons/details.svg"
+                      width={30}
+                      height={30}
+                      alt="Details Icon"
+                    />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                    Google Sheets Add-On
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Input a VIN and retrieve the vehicle&apos;s Year, Make,
+                    Model, and Trims directly from the manufacturer.
+                  </p>
+                </div>
+                <div>
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    <Image
+                      src="/icons/car.svg"
+                      width={30}
+                      height={30}
+                      alt="Car Icon"
+                    />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold dark:text-white">
+                    Chrome Extension
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Obtain comprehensive descriptions and codes of vehicle
+                    features as provided by the original equipment manufacturer
+                    (OEM).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div> */}
+
+
       <div className="py-12">
         <div>
           <section className="bg-white dark:bg-gray-900">

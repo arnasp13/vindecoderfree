@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: 'VINDecoderFree.com Privacy Policy',
-    robots: 'noindex, nofollow',
-  description: 'Welcome to the Privacy Policy for VinoVista: VIN Insight.'
-}
+  title: "VINDecoderFree.com Privacy Policy",
+  robots: "noindex, nofollow",
+  description: "Welcome to the Privacy Policy for VinoVista: VIN Insight.",
+};
 
 const PrivacyPolicy = () => {
   return (
