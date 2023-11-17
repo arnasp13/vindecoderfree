@@ -19,9 +19,14 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/ai",
+        source: "/extension",
         destination:
           "https://chromewebstore.google.com/detail/vin-decoder-instant-vehic/ckghkkfgljadklgemfelfckaiimbnjki",
+        permanent: true,
+      },
+      {
+        source: "/ai",
+        destination: "https://chat.openai.com/g/g-iuxMxTLtW-vin-decoder",
         permanent: true,
       },
     ];
