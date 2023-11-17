@@ -16,6 +16,16 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/ai",
+        destination:
+          "https://chromewebstore.google.com/detail/vin-decoder-instant-vehic/ckghkkfgljadklgemfelfckaiimbnjki",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
