@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Providers from "./providers";
 import Script from "next/script";
+import "./styles.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,13 +37,18 @@ export default function RootLayout({
                     <Image src="/logo.png" width={60} height={60} alt="Logo" />
                   </Link>
 
-                  <Link
-                    href="/google-sheets"
-                    target="_blank"
-                    className="no-underline bg-primary-1 px-5 py-4 rounded-[50px] text-white font-semibold"
-                  >
-                    Get Google Sheet Add-On
-                  </Link>
+                  <div>
+                    <Link href="/blog" className="pr-6 no-underline">
+                      Blog
+                    </Link>
+                    <Link
+                      href="/google-sheets"
+                      target="_blank"
+                      className="rounded-[50px] no-underline"
+                    >
+                      Get Google Sheet Add-On
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

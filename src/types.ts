@@ -29,3 +29,27 @@ export interface VinResult {
   Variable: string;
   VariableId: number | string;
 }
+
+/// blog
+
+export interface ITag {
+  tag: string;
+  tag_slug: string;
+}
+
+export interface IPost {
+  meta: {
+    title: string;
+    published_at: string;
+    excerpt: string;
+    tag: string;
+    author: string;
+    author_photo: string;
+    author_url: string;
+    tag_slug: string;
+    feature_image: string;
+    feature_image_alt: string;
+    featured?: boolean;
+  };
+  slug: string;
+}

@@ -98,9 +98,10 @@ export default async function Home({ params }: { params: { slug: string } }) {
   const filteredMakes = Data.filter(
     (item) => item.make.toUpperCase() === carMake.toUpperCase()
   );
+
   const carMakeData = filteredMakes?.length > 0 ? filteredMakes[0] : null;
 
-  console.log({ carMake, carMakeData });
+  const sampleVins = Data.map((item) => [...item.example_vins]);
 
   return (
     <>
@@ -149,6 +150,22 @@ export default async function Home({ params }: { params: { slug: string } }) {
         />
         <div className="my-8">
           <SearchBlock placeholder="Decode another VIN" />
+        </div>
+        <div className="mt-12">
+          <h4 className="pb-1 text-xl font-semibold">
+            Try out other VIN codes:
+          </h4>
+          <ul>
+            {Data.slice(0, 3).map((oneMake) =>
+              oneMake?.example_vins?.map((item) => (
+                <li key={item?.vin}>
+                  <Link href={`/vin/${item?.vin}`}>
+                    {item?.vin} ({oneMake?.make} {item?.model} {item?.year})
+                  </Link>
+                </li>
+              ))
+            )}
+          </ul>
         </div>
       </div>
     </>
