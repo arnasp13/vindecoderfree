@@ -125,15 +125,8 @@ export default async function Home({ params }: { params: { slug: string } }) {
         />
         <div className="shadow-md shadow-neutral-700px-4 px-3 md:px-16 max-w-[1000px] flex flex-col m-auto border rounded-xl bg-neutral-100 mt-[-50px] md:mt-[-151px] opacity-[100%] relative z-99">
           <div className="pt-6 flex gap-1 md:gap-2 text-primary-2 items-center text-sm">
-            <Link href="/" className="no-underline text-primary-2">
-              Home
-            </Link>{" "}
-            &gt;{" "}
-            <Link
-              className="no-underline text-primary-2"
-              href={`/blog/${post?.meta?.tag_slug}`}
-            >
-              {post?.meta?.tag}
+            <Link href="/blog" className="no-underline text-primary-2">
+              Blog
             </Link>{" "}
             &gt; <span className="text-neutral-400">{post?.meta?.title} </span>
           </div>

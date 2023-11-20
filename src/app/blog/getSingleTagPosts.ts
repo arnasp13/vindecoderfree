@@ -18,5 +18,7 @@ export const getTagPosts = async (tag: string) => {
     };
   });
 
-  return posts.filter((post) => post.meta?.tag_slug === tag);
+  return posts.filter(
+    (post) => post.meta?.tag_slug?.toLowerCase() === tag?.toLowerCase()
+  );
 };
