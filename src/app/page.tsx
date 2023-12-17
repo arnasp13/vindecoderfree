@@ -6,6 +6,8 @@ import Link from "next/link";
 import { SearchBlock } from "@/components/search-block";
 import { Metadata } from "next";
 import { CarMakeList } from "@/components/car-make-list";
+import { Features } from "@/components/home/features";
+import { Testimonials } from "@/components/home/testimonials";
 
 export const metadata: Metadata = {
   title: "VIN Decoder: Instantly Decode Vehicle Identification Numbers",
@@ -24,7 +26,7 @@ export default function Home() {
 
       {/* First Block */}
       <section className="bg-white py-20 px-4 max-w-[1000px] m-auto">
-        <h1 className="text-5xl font-bold text-center">VIN Decoder</h1>
+        <h1 className="text-5xl font-bold text-center">Decode any VIN</h1>
         <p className="text-xl text-center text-gray-600 mt-4 mb-8">
           Enter your Vehicle Identification Number to get details
         </p>
@@ -44,8 +46,14 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <div className="bg-secondary-2 py-12">
+      <Image
+        src="/image 1.png"
+        width={800}
+        height={800}
+        alt=""
+        className="mx-auto"
+      />
+      {/* <div className="bg-secondary-2 py-12">
         <div>
           <section>
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
@@ -117,130 +125,10 @@ export default function Home() {
             </div>
           </section>
         </div>
-      </div>
+      </div> */}
+      <Features />
 
-      <div className="py-12">
-        <div>
-          <section>
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-              <div className="max-w-screen-md mb-8 lg:mb-16">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
-                  Everything you need in a VIN Decoder
-                </h2>
-                <p className="text-gray-500 sm:text-xl ">
-                  At VinDecoderFree.com, we specialize in areas where
-                  technology, innovation, and resources can reveal lasting value
-                  and propel automotive insights.
-                </p>
-              </div>
-              <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <Image
-                      src="/icons/book.svg"
-                      width={30}
-                      height={30}
-                      alt="Book Icon"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold ">
-                    VIN Decoder Essentials
-                  </h3>
-                  <p className="text-gray-500 ">
-                    Let us provide the best data sources for you.
-                  </p>
-                </div>
-                <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <Image
-                      src="/icons/details.svg"
-                      width={30}
-                      height={30}
-                      alt="Details Icon"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold ">
-                    Vehicle Details
-                  </h3>
-                  <p className="text-gray-500 ">
-                    Input a VIN and retrieve the vehicle&apos;s Year, Make,
-                    Model, and Trims directly from the manufacturer.
-                  </p>
-                </div>
-                <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <Image
-                      src="/icons/car.svg"
-                      width={30}
-                      height={30}
-                      alt="Car Icon"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold ">
-                    Vehicle Options
-                  </h3>
-                  <p className="text-gray-500 ">
-                    Obtain comprehensive descriptions and codes of vehicle
-                    features as provided by the original equipment manufacturer
-                    (OEM).
-                  </p>
-                </div>
-                <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <Image
-                      src="/icons/color.svg"
-                      width={30}
-                      height={30}
-                      alt="Color Icon"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold ">
-                    Color Specifications
-                  </h3>
-                  <p className="text-gray-500 ">
-                    Discover the vehicle&apos;s interior and exterior colors as
-                    per the manufacturer&apos;s standards.
-                  </p>
-                </div>
-                <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <Image
-                      src="/icons/vehicle-services.svg"
-                      width={30}
-                      height={30}
-                      alt="Book Icon"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold ">
-                    Vehicle Specs
-                  </h3>
-                  <p className="text-gray-500 ">
-                    Access a full breakdown of the vehicle&apos;s specifications
-                    as given by the manufacturer.
-                  </p>
-                </div>
-                <div>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <Image
-                      src="/icons/speedometer.svg"
-                      width={30}
-                      height={30}
-                      alt="Speedometer Icon"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold ">
-                    Powertrain Details
-                  </h3>
-                  <p className="text-gray-500 ">
-                    Dive into in-depth information about the vehicle&apos;s
-                    engine and transmission, sourced from OEM databases.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+      <Testimonials />
 
       <CarMakeList carData={CarData} />
 

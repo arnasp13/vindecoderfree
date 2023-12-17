@@ -55,7 +55,6 @@ export default function Home({ params }: { params: { slug: string } }) {
         </Link>
         <SearchBlock
           placeholder={`Enter your ${carData?.make} VIN`}
-          maxW="800px"
         />
 
         <div className="my-10">
